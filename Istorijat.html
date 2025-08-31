@@ -1,0 +1,303 @@
+<!--ISTORIJAT-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEADER-->
+<head>
+
+    <!--ZAGLAVLJE-->
+    <!--Mилица Арбутина, АИ 56/2022-->
+    <!--Анимација у инжењерству-->
+    <!--Веб дизајн Предметни пројекат-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бaта</title>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+    <!--Implementacija Bootstrap-a-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <script src="slike.js"></script>
+
+
+
+</head>
+
+
+<!--CSS ZA HOVER-->
+
+<style>
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+</style>
+
+
+
+
+<body style="font-family: 'Roboto Condensed', sans-serif; font-weight: 400">
+
+
+    <!--NASLOV-->
+    <div id="Top" class="jumbotron text-center position-relative" style="font-weight: 300; color: black; margin: 0; padding: 80px 20px;">
+
+        <div style="background-image: url('./gallery/istorijatPozadina.jpg'); background-size: cover; background-position: center; opacity: 0.8; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;">
+        </div>
+
+        <!-- Sadržaj iznad overlay-a -->
+        <div style="position: relative; z-index: 1;">
+
+            <!--Display klasa da se skalira na manjim ekranima-->
+            <h1 class="display-3" style="font-weight: 700; color: white">Историјат</h1>
+            <h5 class="display-5" style="font-weight: 400; color: white">фабрике Бата</h5>
+
+        </div>
+
+    </div>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="Glavna.html">
+            <img class="rounded" src="./gallery/Logo.svg" style="width: 70px;">
+        </a>
+
+        <!-- Linkovi -->
+        <div id="Biografija" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Историјат фабрике Бата</a></li>
+                <li class="nav-item"><a class="nav-link" href="Zanimljivosti.html">Занимљивости</a></li>
+
+                <!--PADAJUCI MENI U NAVBARU-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наслеђе</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Inovacije.html">Иновације</a>
+                        <a class="dropdown-item" href="Bibliografija.html">Библиографија</a>
+                        <a class="dropdown-item" href="Zlin.html">Злин</a>
+                        <a class="dropdown-item" href="Borovo.html">Борово</a>
+                        <a class="dropdown-item" href="HumanitarniRad.html">Хуманитарни рад</a>
+                        <a class="dropdown-item" href="Univerzitet.html">Универзитет Томаша Бате</a>
+                        <a class="dropdown-item" href="BatinKanal.html">Батин канал</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dugme za collapse kada se dosta smanji prikaz-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Biografija" aria-controls="Biografija" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    </nav>
+
+
+
+
+    <!--TABELA-->
+    <div class="container-fluid" style="background-size: 90%;">
+
+
+        <!--SADRZAJ-->
+        <div class="row align-items-center p-4 shadow-lg" style="background-color: rgb(200, 200, 200); border-radius: 20px">
+
+            <div class="col-sm-6" style="margin-top: 10px">
+                <h4>Садржај:</h4>
+                <p>
+                    
+                </p>
+
+                <ul>
+                    <li class="list-item text-danger"><a class="text-danger" href="#osnivanje">Оснивање</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#dsr">Други светски рат</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#kraj20">Крај 20. века</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#danas">Данас</a></li>
+                </ul> 
+
+            </div>
+
+            <!--Logo-->
+            <div class="col-sm-6 d-flex justify-content-end">
+                <img src="./gallery/Logo.svg" style="width: 30%;">
+            </div>
+
+        </div>
+
+
+
+        <!--PODNASLOVI-->
+        <!--Osnivanje-->
+        <div class="row align-items-center" style="padding-right: 30px; margin: 30px">
+
+            <div id="osnivanje" class="col-sm-6">
+
+                <h5 style="padding-bottom: 10px;">Оснивање</h5>
+
+                <p class="p-3">
+
+                    Фирма „Бата“ настала је 1894. године у Злину, малом месту у Моравској, када су Томаш Бата, његова сестра Анижка и брат Антонин основали малу радионицу за израду обуће. Породица је вековима била обућарска, али је Томаш, иако млад, имао далекосежнију визију. У почетку је фирма имала свега неколико запослених, а радници су ручно израђивали обућу. Ипак, убрзо након оснивања, млада фирма се нашла у финансијским тешкоћама, што је приморало Томаша да потражи нове путеве. Одлучио је да уведе једноставнију и јефтинију обућу од платна и коже, која је била приступачнија ширим слојевима становништва. Та одлука показала се пресудном, јер је омогућила фирми да преживи прве кризе и да почне да расте. Почетком 20. века Бата је већ имао стотине запослених и постајао све значајнији произвођач у региону. Прави процват фирма је доживела у међуратном периоду. Први светски рат отворио је огромну потражњу за војничком обућом, што је фирми донело велике наруџбине и омогућило ширење производних капацитета. 
+                </p>
+
+                <p class="p-3">
+                    Након рата, Томаш Бата се окреће модернизацији. Путује у Сједињене Америчке Државе где упознаје Фордове методе тракасте производње и убрзо их прилагођава обућарској индустрији. Уводи принципе рационализације рада, али и свој систем „децентрализованих погона“ у којем свака радионица функционише као мања јединица одговорна за сопствени учинак. Обућа је постајала све јефтинија, па је фирма својим производима могла да освоји масовно тржиште. Злин, у коме је фабрика расла, прерастао је у јединствени индустријски град – „Бата град“ – са модерним радничким становима, школама, болницама и културним установама. Томаш Бата није фабрику видео само као место рада, већ као читав друштвени систем. До његове трагичне погибије 1932. године, компанија је имала више десетина хиљада радника, фабрике и продавнице широм света, и представљала је симбол модерне индустријализације.
+                </p>
+
+            </div>
+
+
+            <div class="col-sm-6">
+                <img src="./gallery/1maj.jpg" class="img-thumbnail hover-zoom" style="border-radius: 20px">
+            </div>
+
+
+        </div>
+
+
+        <!--Drugi svetski rat-->
+        <div class="row align-items-center" style="background-color: rgb(200, 200, 200); border-radius: 20px">
+
+            <div id="dsr" class="col-sm-12">
+
+                <h5 style="margin-top: 20px; margin-left: 50px">Други светски рат</h5>
+
+                <p class="p-3" style="margin-left: 45px; margin-right: 20px">
+                    После Другог светског рата фирма је ушла у ново и драматично раздобље. У Чехословачкој је 1945. године национализована и стављена под државну контролу, а породицу Бата је нова власт прогласила непријатељском. Тим чином прекинута је директна веза између породице и матичне фабрике у Злину. Међутим, већ пре рата компанија је имала снажну међународну мрежу: огранци у Канади, Енглеској, Индији, Југославији и Латинској Америци наставили су да послују самостално. На њиховом челу био је Јан Антонин Бата, Томашев полубрат, који је наставио да развија фирму у изгнанству. Док је у социјалистичкој Чехословачкој име Бата било готово избрисано из јавности, у иностранству је компанија доживела експанзију, градећи фабрике, продавнице и читаве радничке колоније на свим континентима. Тиме је бренд опстао упркос политичким поделама и постао једна од ретких европских фирми тог доба која је истински функционисала као глобална корпорација.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!--Kraj 20. veka-->
+        <div class="row align-items-center" style="padding-right: 30px; margin: 30px">
+
+            <div id="kraj20" class="col-sm-12">
+
+                <h5 style="padding-bottom: 10px">Крај 20. века</h5>
+
+                <p class="p-3">
+                    У каснијем 20. веку „Бата“ је постепено мењала свој карактер. Из огромне индустријске фабрике везане за један град, трансформисала се у мултинационалну компанију са седиштем у Швајцарској и са мрежом фабрика у различитим деловима света. Производња више није била централизована у Злину, већ је премештена ближе појединим тржиштима, чиме је фирма смањивала трошкове и прилагођавала се глобалној економији. Током друге половине века све више је пажње усмеравала на маркетинг и малопродају, градећи ланац продавница у преко 70 земаља. Иако се у Чехословачкој није могла наставити традиција између два рата, у свету је „Бата“ задржала свој утицај и име које је било синоним за приступачну, квалитетну обућу. До краја века фирма је остала једна од најпрепознатљивијих глобалних обућарских компанија, са наслеђем које обједињује индустријску, социјалну и културну димензију.
+                </p>   
+            </div>
+
+        </div>
+
+
+        <div class="row align-items-center" style="margin-bottom: 50px">
+
+
+           <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card align-items-center" style="width: 400px">
+                    <img src="./gallery/trgovina.jpg" class="card-img-top hover-zoom" style="width: 75%; border-radius: 20px; margin-top: 30px">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Јан Бата испред Бата радње</h6>
+                    </div>
+                </div>
+            </div>
+
+           <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card align-items-center" style="width: 400px;">
+                    <img src="./gallery/20vek.WebP" class="card-img-top hover-zoom" style="width: 80%; border-radius: 20px; margin-top: 30px">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Бата радња у Швајцарској</h6>
+                    </div>
+                </div>
+            </div>
+
+
+           <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card align-items-center" style="width: 400px;">
+                    <img src="./gallery/jr.jpg" class="card-img-top hover-zoom" style="width: 80%; border-radius: 20px; margin-top: 30px">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Томаш Бата Јуниор дочекан у Злину 1989.</h6>
+                    </div>
+                </div>
+            </div>            
+
+
+        </div>
+
+
+
+        <!--Danas-->
+        <div class="row align-items-center" style="background-color: rgb(200, 200, 200); border-radius: 20px">
+
+            <div id="danas" class="col-sm-12">
+
+                <h5 style="margin-top: 30px; margin-left: 50px">Данас</h5>
+
+                <p class="p-3" style="margin-left: 40px; margin-right: 20px">
+                    Данас, више од једног века након свог оснивања, фирма „Бата“ и даље представља једно од најпрепознатљивијих имена у светској обућарској индустрији. Након бурног 20. века, када је компанија пролазила кроз процвате, национализацију, изгнанство и глобалну експанзију, у 21. веку наставила је да се мења и прилагођава новим условима тржишта. Данас је седиште компаније у Лозани, у Швајцарској, што симболички одражава њену трансформацију из чешке породичне фирме у мултинационалну корпорацију која делује без једног јединственог националног корена.
+
+                    „Бата“ данас послује у више од 70 земаља, са преко пет хиљада малопродајних објеката и бројним фабрикама које су распоређене у Азији, Латинској Америци, Африци и Европи. Годишње производи десетине милиона пари обуће, а стратегија компаније ослања се на комбинацију сопствених производних капацитета и сарадње са локалним партнерима. Тиме је фирма задржала оно што је Томаш Бата увек истицао - блискост купцима и способност да понуди обућу која је истовремено приступачна и практична.
+
+                    <b style="color: rgb(200, 81, 56);">Посебно је занимљиво да и данас „Бата“ наставља традицију изградње читавих малих заједница око својих производних центара. У Индији, Кенији или Латинској Америци, фабрике нису само производни погони, већ и средишта у којима постоје школе, спортски терени, па чак и читави стамбени комплекси. Тај концепт „Бата градова“ - први пут примењен у Злину - пренет је у нове културе и наставио да живи, иако у модернизованом облику.</b>
+
+                    На пословном плану, фирма данас прати све захтеве савременог тржишта. Развија специјализоване брендове за различите групе потрошача - од модне обуће до радне и спортске. Инвестира у нове технологије, као што су еколошки одрживи материјали и дигитална продаја. У последњим деценијама посебно се усмерила на тржишта у развоју, где је обућа за масовно тржиште и даље један од основних производа, али истовремено гради и снажно присуство у урбаним центрима широм света.
+
+                    Иако је фирма већ дуго глобална корпорација, у Злину и у Чешкој њено име и даље има посебно место. Универзитет Томаша Бате, музеји и културне институције у том граду чувају успомену на његовог оснивача и на јединствену симбиозу индустрије и културе коју је створио. Сам бренд „Бата“ остао је симбол доступне обуће за „обичног човека“, што је била Томашева првобитна мисија када је својим јефтиним ципелама од платна спасао малу породичну радњу од пропасти.
+
+                    Тако „Бата“ данас спаја прошлост и будућност: са једне стране је чувар наслеђа модерне индустријализације и социјалних иновација свог оснивача, а са друге стране савремени глобални играч који се прилагођава дигиталном добу и еколошким изазовима. Њена прича је пример како једна фирма, рођена у малом месту у Моравској, може да постане светска корпорација која и даље у себи носи дух визије једног човека.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="background-color: rgb(200, 200, 200); border-radius: 20px">
+
+            <div class="col-sm-12 d-flex justify-content-center" style="margin-top: 20px; margin-bottom: 50px">
+                <img src="./gallery/danas.jpg" class="img-thumbnail hover-zoom" style="width: 40%; border-radius: 20px">
+            </div>            
+
+
+        </div>        
+
+
+
+        <!--DUGME-->
+        <div class="row text-center" style="margin-bottom: 50px; margin-top: 50px">
+
+            <div class="col-sm-12 align-items-center">
+                <button class="btn btn-outline-dark "><a href="#Top">Назад на врх</a></button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!--PODNOZJE-->
+    <div class="text-center" style="background-color: rgba(200, 81, 56, 0.8); bottom: 0px; position: fixed; width: 100%;">
+        <a href="mailto:milicaarbutina03@gmail.com" class="text-light">milicaarbutina03@gmail.com</a>
+    </div>
+
+
+
+</body>
+
+</html>

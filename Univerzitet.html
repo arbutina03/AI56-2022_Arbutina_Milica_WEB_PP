@@ -1,0 +1,225 @@
+<!--UNIVERZITET-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEADER-->
+<head>
+
+    <!--ZAGLAVLJE-->
+    <!--Mилица Арбутина, АИ 56/2022-->
+    <!--Анимација у инжењерству-->
+    <!--Веб дизајн Предметни пројекат-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бaта</title>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+    <!--Implementacija Bootstrap-a-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="slike.js"></script>
+
+
+</head>
+
+
+
+<!--CSS ZA HOVER-->
+
+<style>
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+</style>
+
+
+
+<body style="font-family: 'Roboto Condensed', sans-serif; font-weight: 400">
+
+
+    <!--NASLOV-->
+    <div id="Top" class="jumbotron text-center position-relative" style="font-weight: 300; color: black; margin: 0; padding: 80px 20px;">
+
+        <div style="background-image: url('./gallery/zlin.jpg'); background-size: cover; background-position: center; opacity: 0.8; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;">
+        </div>
+
+        <!-- Sadržaj iznad overlay-a -->
+        <div style="position: relative; z-index: 1;">
+
+            <!--Display klasa da se skalira na manjim ekranima-->
+            <h1 class="display-3" style="font-weight: 700; color: white">Универзитет Томаша Бате у Злину</h1>
+            <h5 class="display-5" style="font-weight: 400; color: white"></h5>
+
+        </div>
+
+    </div>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="Glavna.html">
+            <img class="rounded" src="./gallery/Logo.svg" style="width: 70px;">
+        </a>
+
+        <!-- Linkovi -->
+        <div id="Biografija" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="Istorijat.html">Историјат фабрике Бата</a></li>
+                <li class="nav-item"><a class="nav-link" href="Zanimljivosti.html">Занимљивости</a></li>
+
+                <!--PADAJUCI MENI U NAVBARU-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наслеђе</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Inovacije.html">Иновације</a>
+                        <a class="dropdown-item" href="Bibliografija.html">Библиографија</a>
+                        <a class="dropdown-item" href="Zlin.html">Злин</a>
+                        <a class="dropdown-item" href="Borovo.html">Борово</a>
+                        <a class="dropdown-item" href="HumanitarniRad.html">Хуманитарни рад</a>
+                        <a class="dropdown-item" href="#">Универзитет Томаша Бате</a>
+                        <a class="dropdown-item" href="BatinKanal.html">Батин канал</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dugme za collapse kada se dosta smanji prikaz-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Biografija" aria-controls="Biografija" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    </nav>
+
+
+
+
+    <!--TABELA-->
+    <div class="container-fluid" style="background-size: 90%;">
+       
+        <!--SADRZAJ-->
+        <div class="row align-items-center p-4 shadow-lg" style="background-color: rgb(200, 200, 200); border-radius: 20px">
+
+            <div class="col-sm-6" style="margin-top: 10px">
+                <h4>Садржај:</h4>
+                <p>
+                    
+                </p>
+
+                <ul>
+                    <li class="list-item text-danger"><a class="text-danger" href="#osnivanje">О оснивању</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#uni">О универзитету</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#filozofija">Веза универзитета с Батином филозофија</a></li>
+                </ul> 
+
+            </div>
+
+            <!--Logo-->
+            <div class="col-sm-6 d-flex justify-content-end">
+                <img src="./gallery/Logo.svg" style="width: 30%;">
+            </div>
+
+        </div>
+
+        <!--PODNASLOVI-->
+        <!--Detinjstvo-->
+        <div class="row align-items-center" style="padding-right: 30px; margin: 30px">
+
+            <div id="osnivanje" class="col-sm-6">
+                <h5 class="rounded" style="padding-bottom: 10px;">О оснивању универзитета: </h5>
+
+                <p>
+
+                    Томаш Бата је најзаслужнији за трансформацију Злина из малог места у модеран индустријски и културни центар. Његова филозофија спајања рада, образовања и живота у заједници била је инспирација за оснивање универзитета. Након пада комунизма 1989, у Злину је постојао снажан локални покрет да се обнови Батина традиција. Иницијатива је дошла од града Злина и регионалних власти, уз подршку индустријалаца и интелектуалаца. Званично, оснивање универзитета била је државна одлука, али са јасним симболичним позивањем на Батину визију. Универзитет је основан 1. јануара 2001. године.       
+                </p>
+                <p>
+                    Томаш Бата Млађи је активно подржао оснивање универзитета и дао је сагласност да високошколска установа носи име његовог оца. До своје смрти 2008. године, обављао је функцију председника Управног одбора Универзитета Томаш Бата.
+
+                </p>
+            </div>
+       
+
+            <!--Slika-->
+            <div class="col-sm-6 d-flex justify-content-center">
+                <img class="img-fluid hover-zoom" src="./gallery/univerzitet.jpg" alt="Бата са породицом" style="width: 90%; margin-bottom: 20px; border-radius: 10px">
+            </div>
+        </div>
+
+
+        <!--O univerzitetu-->
+        <div class="row align-items-center" style="background-color: rgb(200, 200, 200); margin-bottom: 50px; border-radius: 20px">
+
+            <div id="uni" class="col-sm-12">
+
+                <h5 style="padding-bottom: 20px; margin-top: 30px; margin-left: 40px">О универзитету: </h5>
+
+                <p style="padding-bottom: 20px; margin-top: 30px; margin-left: 40px">
+                    Универзитет има више факултета: технологије, менаџмента и економије, мултимедија и дизајна, примене информатике, хуманистичких студија, здравствених наука. Седиште и део кампуса налазе се у модерним зградама у центру Злина, на месту где су некада биле Батине фабричке хале. Симболика: Универзитет је створен као наставак „Батиног образовног система“ – идеја да млади морају бити практично образовани, спремни за рад у индустрији и друштву.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!--Filozofija-->
+        <div class="row align-items-center" style="margin-bottom: 50px; border-radius: 20px">
+
+            <div id="filozofija" class="col-sm-12">
+
+                <h5 style="padding-bottom: 20px; margin-top: 30px; margin-left: 40px">Веза с Батином филозофијом :</h5>
+
+                <ol style="margin-bottom: 30px; margin-left: 30px">
+                    <li> Интердисциплинарност: Универзитет повезује технику, економију, дизајн, медије и здравствене студије, што је у складу са Батиним схватањем да се индустрија, култура и друштво морају развијати заједно.</li>
+                    <li>Дизајн и технологија: Посебан акценат стављен је на индустријски дизајн и примењене науке - баш оно што је Бата подржавао у својим фабрикама.</li>
+                    <li>Међународност: Као што је Бата слао младе у свет да уче и раде, универзитет подстиче студенте на размене и има велики број међународних програма.</li>
+                    <li>Предузетништво: Универзитет има „Центар за иновације и трансфер технологија“ који директно негује дух предузетништва - још једна Батина идеја.</li>
+
+                </ol>
+
+            </div>
+
+        </div>
+
+        <!--DUGME-->
+        <div class="row text-center" style="margin-bottom: 50px;">
+
+            <div class="col-sm-12 align-items-center">
+                <button class="btn btn-outline-dark "><a href="#Top">Назад на врх</a></button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!--PODNOZJE-->
+    <div class="text-center" style="background-color: rgba(200, 81, 56, 0.8); bottom: 0px; position: fixed; width: 100%;">
+        <a href="mailto:milicaarbutina03@gmail.com" class="text-light">milicaarbutina03@gmail.com</a>
+    </div>
+
+
+
+</body>
+
+</html>

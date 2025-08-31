@@ -1,0 +1,246 @@
+<!--BIBLIOGRAFIJA-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEADER-->
+<head>
+
+    <!--ZAGLAVLJE-->
+    <!--Mилица Арбутина, АИ 56/2022-->
+    <!--Анимација у инжењерству-->
+    <!--Веб дизајн Предметни пројекат-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бaта</title>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+    <!--Implementacija Bootstrap-a-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="slike.js"></script>
+
+
+
+</head>
+
+
+
+<!--CSS ZA HOVER-->
+
+<style>
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+</style>
+
+
+
+
+<body style="font-family: 'Roboto Condensed', sans-serif; font-weight: 400">
+
+
+    <!--NASLOV-->
+    <div id="Top" class="jumbotron text-center position-relative" style="font-weight: 300; color: black; margin: 0; padding: 80px 20px;">
+
+        <div style="background-image: url('./gallery/zlin.jpg'); background-size: cover; background-position: center; opacity: 0.8; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;">
+        </div>
+
+        <!-- Sadržaj iznad overlay-a -->
+        <div style="position: relative; z-index: 1;">
+
+            <!--Display klasa da se skalira na manjim ekranima-->
+            <h1 class="display-3" style="font-weight: 700; color: white">Библиографија</h1>
+            <h5 class="display-5" style="font-weight: 400; color: white">Томаша Бате</h5>
+
+        </div>
+
+    </div>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="Glavna.html">
+            <img class="rounded" src="./gallery/Logo.svg" style="width: 70px;">
+        </a>
+
+        <!-- Linkovi -->
+        <div id="Biografija" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="Istorijat.html">Историјат фабрике Бата</a></li>
+                <li class="nav-item"><a class="nav-link" href="Zanimljivosti.html">Занимљивости</a></li>
+
+                <!--PADAJUCI MENI U NAVBARU-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наслеђе</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Inovacije.html">Иновације</a>
+                        <a class="dropdown-item" href="#">Библиографија</a>
+                        <a class="dropdown-item" href="Zlin.html">Злин</a>
+                        <a class="dropdown-item" href="Borovo.html">Борово</a>
+                        <a class="dropdown-item" href="HumanitarniRad.html">Хуманитарни рад</a>
+                        <a class="dropdown-item" href="Univerzitet.html">Универзитет Томаша Бате</a>
+                        <a class="dropdown-item" href="BatinKanal.html">Батин канал</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dugme za collapse kada se dosta smanji prikaz-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Biografija" aria-controls="Biografija" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    </nav>
+
+
+
+
+    <!--TABELA-->
+    <div class="container-fluid" style="background-size: 90%;">
+
+        <div class="row p-3" style="margin: 30px">
+            <p>
+                Томаш Бата се, поред предузетништва, револуционарског рада у пољу индустрије обуће, филантропије и грађења и ширења своје империје, бавио и публицистиком. Написао је бројне економско-пословне / стручне текстове са примесама социјалне филозофије: организације рада, радничке заједнице, образовања, масовне производње.
+            </p>
+        </div>
+       
+
+        <!--SADRZAJ-->
+        <div class="row align-items-center p-4 shadow-lg" style="background-color: rgb(200, 200, 200);     border-radius: 20px">
+
+            <div class="col-sm-6" style="margin-top: 10px">
+                <h5>Најважнија дела:</h5>
+                    <p>
+                        
+                    </p>
+
+                <ul>
+                    <li class="list-item text-danger"><a class="text-danger" href="#delo1"><i>Reorganisace obuvnictví</i></a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#delo2"><i>Našemu technickému dorostu</i></a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#delo3"><i>Národohospodářská a správní organisace Zlínského kraje</i></a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#delo4"><i>Úvahy a projevy</i></a></li>
+
+                </ul> </h5>
+
+
+            </div>
+
+
+            <!--Logo-->
+            <div class="col-sm-6 d-flex justify-content-end">
+                <img src="./gallery/Logo.svg" style="width: 30%;">
+            </div>
+
+        </div>
+
+        <!--PODNASLOVI-->
+        <div class="row align-items-center" style="padding-right: 30px; margin: 30px">
+
+            <!--Delo 1-->
+            <div id="delo1" class="col-sm-6">
+                <h5 class="rounded p-3" style="padding-bottom: 10px;"><i>Reorganisace obuvnictví</i></h5>
+
+                    <ul>
+                        <li>Природа: стручна публикација / економско-пословни текст</li>
+                        <li>Садржај: Бата уводи системску организацију производње ципела, описује начин рационализације рада и оптимизацију фабричких процеса.</li>
+                        <li>Циљ: показати како масовна производња може бити ефикасна и квалитетна.</li>
+                    </ul>
+
+            </div>
+
+            <!--Delo 2-->
+            <div id="delo2" class="col-sm-6">
+                <h5 class="rounded p-3" style="padding-bottom: 10px;"><i>Našemu technickému dorostu</i></h5>
+
+                    <ul>
+                        <li>Природа: стручни приручник за младе техничаре</li>
+                        <li>Садржај: упутства, савети и инспиративни текстови намењени младима који се образују за рад у индустрији.</li>
+                        <li>Циљ: образовање и мотивисање следеће генерације радника и инжењера.</li>
+                    </ul>
+
+            </div>
+
+        </div>
+
+        
+        <div class="row align-items-center" style="padding-right: 30px; margin: 30px">
+
+            <!--Delo 3-->
+            <div id="delo3" class="col-sm-6">
+                <h5 class="rounded p-3" style="padding-bottom: 10px;"><i>Národohospodářská a správní organisace Zlínského kraje</i></h5>
+
+                    <ul>
+                        <li>Природа: економско-социјални списи / организациони текст</li>
+                        <li>Садржај: анализира економску и административну организацију региона Злина, прилагођавајући је потребама индустрије и заједнице.</li>
+                        <li>Циљ: приказати моделе ефикасне организације и управљања у индустријском и друштвеном контексту.</li>
+                    </ul>
+
+            </div>
+
+
+            <!--Delo 4-->
+            <div id="delo4" class="col-sm-6">
+                <h5 class="rounded p-3" style="padding-bottom: 10px;"><i>Úvahy a projevy</i></h5>
+
+
+                    <p>
+                        <i>„Úvahy a projevy“</i> је збирка Баťиних разматрања, говорâ и текстова који су објављивани у периоду од 1919. до 1932. године. У овим текстовима, Баťa износи своје ставове о различитим аспектима живота и пословања, укључујући:
+                    </p>
+
+                    <ul>
+                        <li>Организацију рада: Како ефикасно организовати радне процесе и тимове.</li>
+                        <li>Социјалну одговорност: Улога предузећа у друштву и одговорност према радницима.</li>
+                        <li>Економију: Разматрања о економским принципима и праксама.</li>
+                        <li>Образовање: Значај образовања за лични и професионални развој.</li>
+                        <li>Мотивацију: Како мотивисати раднике и подстицање њихове продуктивности.</li>
+                    </ul>
+
+            </div>            
+
+        </div>
+
+
+        <!--Dugme za top-->
+        <div class="row text-center" style="margin-bottom: 50px;">
+
+            <div class="col-sm-12 align-items-center">
+                <button class="btn btn-outline-dark "><a href="#Top">Назад на врх</a></button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!--PODNOZJE-->
+    <div class="text-center" style="background-color: rgba(200, 81, 56, 0.8); bottom: 0px; position: fixed; width: 100%;">
+        <a href="mailto:milicaarbutina03@gmail.com" class="text-light">milicaarbutina03@gmail.com</a>
+    </div>
+
+
+
+</body>
+
+</html>

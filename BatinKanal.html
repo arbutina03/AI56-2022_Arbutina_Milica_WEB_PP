@@ -1,0 +1,299 @@
+<!--BATIN KANAL-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEADER-->
+<head>
+
+    <!--ZAGLAVLJE-->
+    <!--Mилица Арбутина, АИ 56/2022-->
+    <!--Анимација у инжењерству-->
+    <!--Веб дизајн Предметни пројекат-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бaта</title>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+    <!--Implementacija Bootstrap-a-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="slike.js"></script>
+
+
+
+
+</head>
+
+
+
+<!--CSS ZA HOVER-->
+
+<style>
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+</style>
+
+
+
+<body style="font-family: 'Roboto Condensed', sans-serif; font-weight: 400">
+
+
+    <!--NASLOV-->
+    <div id="Top" class="jumbotron text-center position-relative" style="font-weight: 300; color: black; margin: 0; padding: 80px 20px;">
+
+        <div style="background-image: url('./gallery/batinKanalPozadina.jpeg'); background-size: cover; background-position: center; opacity: 0.8; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;">
+        </div>
+
+        <!-- Sadržaj iznad overlay-a -->
+        <div style="position: relative; z-index: 1;">
+
+            <!--Display klasa da se skalira na manjim ekranima-->
+            <h1 class="display-3" style="font-weight: 700; color: white">Батин канал</h1>
+            <h5 class="display-5" style="font-weight: 400; color: white">заслуга Томаша Бате</h5>
+
+        </div>
+
+    </div>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="Glavna.html">
+            <img class="rounded" src="./gallery/Logo.svg" style="width: 70px;">
+        </a>
+
+        <!-- Linkovi -->
+        <div id="Biografija" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="Istorijat.html">Историјат фабрике Бата</a></li>
+                <li class="nav-item"><a class="nav-link" href="Zanimljivosti.html">Занимљивости</a></li>
+
+                <!--PADAJUCI MENI U NAVBARU-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наслеђе</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Inovacije.html">Иновације</a>
+                        <a class="dropdown-item" href="Bibliografija.html">Библиографија</a>
+                        <a class="dropdown-item" href="Zlin.html">Злин</a>
+                        <a class="dropdown-item" href="Borovo.html">Борово</a>
+                        <a class="dropdown-item" href="HumanitarniRad.html">Хуманитарни рад</a>
+                        <a class="dropdown-item" href="Univerzitet.html">Универзитет Томаша Бате</a>
+                        <a class="dropdown-item" href="#">Батин канал</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dugme za collapse kada se dosta smanji prikaz-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Biografija" aria-controls="Biografija" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    </nav>
+
+
+
+
+    <!--TABELA-->
+    <div class="container-fluid" style="background-size: 90%;">
+
+
+
+        <div class="row align-items-center">
+            <div class="col-sm-12 p-5" style="margin-top: 30px; margin-right: 30px">
+                <p>
+                    Батин канал (чешки: Baťův kanál; Průplav Otrokovice-Rohatec) је пловни канал на реци Морави у Чешкој Републици. Водени канал је изграђен између 1934. и 1938. године и данас служи углавном за рекреативна крстарења. Један је од најважнијих техничких и привредних пројеката Томаша Бате.
+                    То је пловни канал дужине око 52 km, изграђен у периоду 1934–1938. године у области Моравске у Чешкој. Канал повезује реке Мораву и Бечву, а првобитно је замишљен као део већег пловног система који би ишао све до Дунава. 
+                </p>
+                <p>
+                    Током Другог светског рата, канал је тешко оштећен и само делимично поправљен (поправке су трајале до 1949. године). Његова употреба за транспорт је опала, а 1972. године је званично напуштен. Године 1995, рута је поново отворена за туристичке туре.
+                </p>
+                
+            </div>
+            
+        </div>
+
+        <!--SADRZAJ-->
+        <div class="row align-items-center p-4 shadow-lg" style="background-color: rgb(200, 200, 200);     border-radius: 20px">
+
+            <div class="col-sm-6" style="margin-top: 10px">
+                <h4>Садржај:</h4>
+                <p>
+                    
+                </p>
+
+                <ul>
+                    <li class="list-item text-danger"><a class="text-danger" href="#zasto">Зашто је изграђен?</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#istorijskiZnacaj">Историјски значај</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#danas">Данас</a></li>
+                    <li class="list-item text-danger"><a class="text-danger" href="#galerija">Галерија</a></li>
+                </ul> 
+
+            </div>
+
+
+            <!--Logo-->
+            <div class="col-sm-6 d-flex justify-content-end">
+                <img src="./gallery/Logo.svg" style="width: 30%;">
+            </div>
+
+        </div>
+
+
+        <!--PODNASLOVI-->
+        <!--Zasto je izgradjen-->
+        <div class="row align-items-center" style="padding-right: 30px; margin: 30px">
+
+            <div id="zasto" class="col-sm-12">
+                <h5 style="padding-bottom: 10px;"><b>Зашто је изграђен?</b></h5>
+
+                <p>
+                    Непосредни разлог за изградњу била је потреба за преносом лигнита из рудника у Ратишковицама до електране Отроковице. Оба су била у власништву компаније Бата и компанија је била главни инвеститор (остатак је платила држава). Изградња је почела 16. октобра 1934. и завршена је током јесени 1938. Канал је финансирао Јан Антонин Бата у сарадњи са чехословачком државом.
+                </p>
+                <p>
+                    Изградња је такође била почетна фаза дуго планираног, али никада реализованог канала Дунав-Одра.
+                </p>
+
+                <ul class="p-3">
+                    <li>
+                        <b>Транспорт угља</b> - главни разлог је био снабдевање Батиних фабрика угљем из рудника код Ратиштана. Водени транспорт је био много јефтинији од железнице. 
+                    </li>
+                    <li> 
+                        <b>Навodњавање и заштита од поплава</b> - канал је служио и као систем за наводњавање поља, као и за одбрану од честих поплава у региону. 
+                    </li>
+                    <li>
+                        <b>Развој инфраструктуре</b> - Бата је желео да канал буде део ширег система унутрашњих водних путева, што је требало да ојача економију и омогући јефтин транспорт робе.
+                    </li>
+
+                </p>
+            </div>
+
+        </div>
+
+
+        <!--Istorijski znacaj-->
+        <div class="row align-items-center" style="background-color: rgb(200, 200, 200); padding-left: 40px; padding-top: 30px; border-radius: 20px ">
+
+
+            <div id="istorijskiZnacaj" class="col-sm-12">
+
+                <h5><b>Историјски значај</b></h5>
+
+                <ol class="p-4">
+                    <li>Канал је био технолошки напредан за своје време.</li>
+                    <li>Грађен је у време светске економске кризе и пружао је посао хиљадама радника.</li>
+                    <li>Пројекат је финансирала углавном Батина компанија.</li>
+                    <li>Иако је био планиран као почетак много већег система, други светски рат је спречио реализацију тог ширег плана.</li>
+                </ol>  
+
+            </div>
+        </div>
+
+
+        <!--Danas-->
+        <div class="row align-items-center" style="padding-right: 30px; margin: 30px; margin-bottom: 50px">
+
+            <div id="danas" class="col-sm-12">
+
+                <h5 style="padding-bottom: 20px"><b>Данас</b></h5>
+
+                <p>
+                    Траса је дугачка 51,8 км, од чега 27 км отпада на реку Мораву, 1 км на реку Древницу и 24 км је вештачки канал. Разлика у водостају је 18,6 м. Укупно 33 моста су премошћена преко канала. Канал је имао 14 брана. Неки делови техничке инфраструктуре били су прилично јединствени у време изградње.
+                </p>
+                <p>
+                    Познат је под именом Bataův kanál. Данас се више не користи за индустријски транспорт, већ као туристичка атракција. Дуж канала се налазе пристаништа, изнајмљују се чамци, а подручје је познато по бициклистичким и пешачким стазама. Данас је доступно 13 брана канала. Канал је постао најпопуларнија туристичка дестинација у региону, а постоје и планови да се прошири низводно до границе са Словачком.
+                </p>   
+            </div>
+
+        </div>
+
+
+
+        <!--GALERIJA SLIKA-->
+        <div id="galerija" class="row align-items-center" style="margin-bottom: 30px">
+
+            <div class="col-sm-12" style="margin-left: 50px">
+                <h5><b>Галерија:</b></h5>
+            </div>
+
+        </div>
+
+
+        <div class="row align-items-center" style="margin-bottom: 40px">
+
+            <div class="col-sm-4 d-flex justify-content-end">
+                <img class="rounded hover-zoom" src="./gallery/kanal2.jpg" style="width: 80%">
+            </div>
+
+            <div class="col-sm-4 d-flex justify-content-center">
+                <img class="rounded hover-zoom" src="./gallery/kanal3.jpeg" style="width: 80%">
+            </div>
+
+            <div class="col-sm-4 d-flex justify-content-start">
+                <img class="rounded hover-zoom" src="./gallery/kanal1.jpg" style="width: 80%">
+            </div>
+            
+        </div>
+
+        <div class="row align-items-center" style="margin-bottom: 60px">
+
+            <div class="col-sm-4 d-flex justify-content-end">
+                <img class="rounded hover-zoom" src="./gallery/kanal4.jpg" style="width: 80%">
+            </div>
+
+            <div class="col-sm-4 d-flex justify-content-center">
+                <img class="rounded hover-zoom" src="./gallery/batinKanalPozadina.jpeg" style="width: 80%">
+            </div>
+
+            <div class="col-sm-4 d-flex justify-content-start">
+                <img class="rounded hover-zoom" src="./gallery/kanal2.jpeg" style="width: 80%">
+            </div>
+            
+        </div>
+
+
+        <!--DUGME-->
+        <div class="row text-center" style="margin-bottom: 50px;">
+
+            <div class="col-sm-12 align-items-center">
+                <button class="btn btn-outline-dark "><a href="#Top">Назад на врх</a></button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!--PODNOZJE-->
+    <div class="text-center" style="background-color: rgba(200, 81, 56, 0.8); bottom: 0px; position: fixed; width: 100%;">
+        <a href="mailto:milicaarbutina03@gmail.com" class="text-light">milicaarbutina03@gmail.com</a>
+    </div>
+
+
+
+</body>
+
+</html>
